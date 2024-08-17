@@ -100,7 +100,7 @@ For demonstration purposes, this tutorial will train a simple classification mod
 - In the **Validation type** dropdown, select "k-fold cross-validation", then enter "2" as your **Number of cross validations**. (***Note:** This section is optional and may be left as is, but for this project, a k-fold cross-validation will be implemented.*)<br><br>
 - Click **Next**.<br><br>
 - In the **Select compute type** dropdown, select "Compute cluster".<br><br>
-- For new users, create a new new compute cluster by clicking ``+ New``
+- In the **Select Azure ML compute cluster** section, create a new or select an existing compute cluster. If you don't create a new new compute cluster by clicking ``+ New``
 
 
 
