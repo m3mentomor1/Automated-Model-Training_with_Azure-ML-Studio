@@ -25,7 +25,7 @@ For demonstration purposes, this tutorial will train a simple classification mod
 [2. Upload a dataset as a data asset](https://github.com/m3mentomor1/Automated-Model-Training_with_Azure-ML-Studio/blob/main/README.md#2-upload-a-dataset-as-a-data-asset)<br>
 [3. Create an automated machine learning job](https://github.com/m3mentomor1/Automated-Model-Training_with_Azure-ML-Studio/blob/main/README.md#3-create-an-automated-machine-learning-job)<br>
 [4. Explore trained model/s](https://github.com/m3mentomor1/Automated-Model-Training_with_Azure-ML-Studio/blob/main/README.md#4-explore-trained-models)<br>
-[5. Deploy & test trained model/s]()<br><br>
+[5. Deploy & test trained model/s](https://github.com/m3mentomor1/Automated-Model-Training_with_Azure-ML-Studio/blob/main/README.md#5-deploy--test-trained-models)<br><br>
 
 
 ### 1. Create a workspace<br>
