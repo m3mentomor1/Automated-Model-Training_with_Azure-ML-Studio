@@ -145,7 +145,7 @@ For demonstration purposes, this tutorial will train a simple classification mod
  
 <br>
 
-### 6. Clean all used resources<br>
+### 6. Clean used resources<br>
 
 **Option 1: Delete only the deployment instance & keep the resource group and workspace**<br>
 - Go to https://ml.azure.com.<br><br>
