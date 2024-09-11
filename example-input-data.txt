@@ -1,0 +1,124 @@
+I. Explanation of input data
+
+1. age: The age of the client (e.g., 35).  
+   Example: 35 years old.
+
+2. job: The type of job the client has (e.g., "management").  
+   Example: Management, blue-collar, technician, etc.
+
+3. marital: The marital status of the client (e.g., "married").  
+   Example: Single, married, divorced.
+
+4. education: The level of education attained by the client (e.g., "university.degree").  
+   Example: Basic (high school), professional course, university degree, etc.
+
+5. default: Whether the client has credit in default (e.g., "no").  
+   Example: "yes" if they have defaulted, "no" otherwise.
+
+6. housing: Whether the client has a housing loan (e.g., "yes").  
+   Example: "yes" if they have a housing loan, "no" otherwise.
+
+7. loan: Whether the client has a personal loan (e.g., "no").  
+   Example: "yes" if they have a personal loan, "no" otherwise.
+
+8. contact: The type of communication contact (e.g., "cellular").  
+   Example: "cellular" or "telephone" refers to how the client was contacted.
+
+9. month: The last contact month of the year (e.g., "may").  
+   Example: The month the client was last contacted (January, May, etc.).
+
+10. day_of_week: The day of the week when the client was last contacted (e.g., "mon").  
+    Example: "mon" for Monday, "tue" for Tuesday, etc.
+
+11. duration: The duration of the last contact in seconds (e.g., 210).  
+    Example: A phone call that lasted 210 seconds.
+
+12. campaign : The number of contacts performed during this campaign (e.g., 3).  
+    Example: The client has been contacted 3 times during the current marketing campaign.
+
+13. pdays: Number of days that passed since the client was last contacted from a previous campaign (e.g., 999).  
+    Example: If never contacted, it is 999. Otherwise, it records the actual days since last contact.
+
+14. previous: The number of contacts with the client before this campaign (e.g., 0).  
+    Example: The client has been contacted 0 times before this campaign.
+
+15. poutcome: The outcome of the previous marketing campaign (e.g., "nonexistent").  
+    Example: Possible values are "success", "failure", or "nonexistent" if there was no previous campaign contact.
+
+16. emp.var.rate: Employment variation rate, a quarterly indicator (e.g., 1.1).  
+    Example: A rate of 1.1 indicates a favorable employment situation.
+
+17. cons.price.idx: Consumer price index, a monthly indicator (e.g., 93.994).  
+    Example: A higher index indicates higher consumer prices.
+
+18. cons.conf.idx: Consumer confidence index, a monthly indicator (e.g., -36.4).  
+    Example: A negative index indicates lower consumer confidence.
+
+19. euribor3m: The Euribor 3-month rate, a benchmark interest rate (e.g., 4.857).  
+    Example: The interest rate used for loans in the Eurozone.
+
+20. nr.employed: The number of employees in the economy (e.g., 5191.0).  
+    Example: The total number of people employed in the relevant labor market. 
+
+
+
+------------------------------
+
+
+
+2. Example input data
+
+Copy and paste this to the editor:
+
+{
+  "input_data": {
+    "columns": [
+      "age",
+      "job",
+      "marital",
+      "education",
+      "default",
+      "housing",
+      "loan",
+      "contact",
+      "month",
+      "day_of_week",
+      "duration",
+      "campaign",
+      "pdays",
+      "previous",
+      "poutcome",
+      "emp.var.rate",
+      "cons.price.idx",
+      "cons.conf.idx",
+      "euribor3m",
+      "nr.employed"
+    ],
+    "index": [0],
+    "data": [
+      [
+        35,
+        "management",
+        "married",
+        "university.degree",
+        "no",
+        "yes",
+        "no",
+        "cellular",
+        "may",
+        "mon",
+        210,
+        3,
+        999,
+        0,
+        "nonexistent",
+        1.1,
+        93.994,
+        -36.4,
+        4.857,
+        5191.0
+      ]
+    ]
+  }
+}
+
