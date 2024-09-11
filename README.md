@@ -145,9 +145,9 @@ For demonstration purposes, this tutorial will train a simple classification mod
 <br><br>
 ##
 
-### 📋 IV. References/Source Materials
-[Microsoft Learn | Tutorial: Train a classification model with no-code AutoML in the Azure Machine Learning studio](https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-first-experiment-automated-ml?view=azureml-api-2)
-
+### 🔍 IV. References/Source Materials
+- [Microsoft Learn | Tutorial: Train a classification model with no-code AutoML in the Azure Machine Learning studio](https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-first-experiment-automated-ml?view=azureml-api-2)
+- [Azure Power Lunch (Youtube) | Azure Automated Machine Learning Overview and Walkthrough](https://www.youtube.com/watch?v=hCPkrihZiDg)
 
 
 
