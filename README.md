@@ -120,7 +120,7 @@ For demonstration purposes, this tutorial will train a simple classification mod
 - Aside from **AUC Weighted**, you can also view other metrics by clicking **View all other metrics** or go to the **Metrics** tab. (***Note:** If you don't see any metric in the **Metrics** tab just click **Refresh**.*)<br><br>
 - In the **Metrics** tab, you can filter and view only the metrics you want by using the **Select Metrics** panel on the left side. (***Note:** Click the double-arrow button pointing to the right next to the "Select Metrics" text to access the filtering options.*)<br><br>
 - Back to the **Model** tab, you can also view the hyperparameters used to improve the performance of the model/s under **Model Summary** > **AUC Weighted** > **View hyperparameters**.<br><br>
-- You can also view an explanation of the model/s & see which data features (raw or engineered) influenced a particular model's predictions in the **Explanations (preview)** tab..<br><br>
+- You can also view an explanation of the model/s & see which data features (raw or engineered) influenced a particular model's predictions in the **Explanations (preview)** tab.<br><br>
 - 
 
 
