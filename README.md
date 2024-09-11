@@ -109,9 +109,24 @@ For demonstration purposes, this tutorial will train a simple classification mod
 - Click **Create**.<br><br>
 - Once you have successfully created a new compute cluster, select the newly created cluster in the **Select Azure ML compute cluster** dropdown & click **Next**.<br><br>
 - Click **Submit training job**.<br><br>
-- To monitor your model's training progress, navigate to the **Jobs** tab under **Assets** in the left navigation pane, then click on "Deposit-Subscription-Prediction." You can check the training status under the **Status** section. If it says "Completed," your model has finished training. (***Note:** With our current training job setup and dataset, the training process could take anywhere from 15 minutes to 1 hour under typical conditions. However, these are general estimates, and the actual time may vary.*)<br><br>
+- To monitor the training progress, navigate to the **Jobs** tab under **Assets** in the left navigation pane, then click on "Deposit-Subscription-Prediction." You can check the training status under the **Status** section. If it says "Completed," your model/s have finished training. (***Note:** With our current training job setup and dataset, the training process could take anywhere from 15 minutes to 1 hour under typical conditions. However, these are general estimates, and the actual time may vary.*)
+
+<br>
 
 ### 4. Explore trained model/s
+- To explore the models you've trained, go to the **Jobs** tab in the **Assets** section of the left navigation pane, then select the "Deposit-Subscription-Prediction" job.<br><br>
+- First, we can check the evaluation metrics of the model/s in the **Models and Child Jobs** tab. Then, click on the name of the model's algorithm, which is "MaxAbsScaler, LightGBM."<br><br>
+- Under **Model Summary** > **AUC Weighted**, you can see the score that represents the model's overall performance in distinguishing between positive & negative classes. Since "AUC Weighted" is the primary metric used in this job, a higher AUC value indicates better model performance.<br><br>
+- Aside from **AUC Weighted**, you can also view other metrics by clicking **View all other metrics** or go to the **Metrics** tab. (***Note:** If you don't see any metric in the **Metrics** tab just click **Refresh**.*)<br><br>
+- In the **Metrics** tab, you can filter and view only the metrics you want by using the **Select Metrics** panel on the left side. (***Note:** Click the double-arrow button pointing to the right next to the "Select Metrics" text to access the filtering options.*)<br><br>
+- Back to the **Model** tab, you can also view the hyperparameters used to improve the performance of the model/s under **Model Summary** > **AUC Weighted** > **View hyperparameters**.<br><br>
+- You can also view an explanation of the model/s & see which data features (raw or engineered) influenced a particular model's predictions in the **Explanations (preview)** tab..<br><br>
+- 
+
+
+
+
+
 
 
  
