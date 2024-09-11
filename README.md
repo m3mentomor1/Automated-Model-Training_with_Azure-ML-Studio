@@ -115,18 +115,19 @@ For demonstration purposes, this tutorial will train a simple classification mod
 
 ### 4. Explore trained model/s
 - To explore the models you've trained, go to the **Jobs** tab in the **Assets** section of the left navigation pane, then select the "Deposit-Subscription-Prediction" job.<br><br>
-- First, we can check the evaluation metrics of the model/s in the **Models and Child Jobs** tab. Then, click on the name of the model's algorithm, which is "MaxAbsScaler, LightGBM."<br><br>
+- First, we can check the evaluation metrics of the model/s in the **Models and Child Jobs** tab. Then, click on the name of the model's algorithm, which is "MaxAbsScaler, LightGBM".<br><br>
 - Under **Model Summary** > **AUC Weighted**, you can see the score that represents the model's overall performance in distinguishing between positive & negative classes. Since "AUC Weighted" is the primary metric used in this job, a higher AUC value indicates better model performance.<br><br>
-- Aside from **AUC Weighted**, you can also view other metrics by clicking **View all other metrics** or go to the **Metrics** tab. (***Note:** If you don't see any metric in the **Metrics** tab just click **Refresh**.*)<br><br>
+- Aside from **AUC Weighted**, you can also view other metrics by clicking **View all other metrics** or go to the **Metrics** tab. (***Note:** If you don't see any metric in the **Metrics** tab just click ``🗘 Refresh``.*)<br><br>
 - In the **Metrics** tab, you can filter and view only the metrics you want by using the **Select Metrics** panel on the left side. (***Note:** Click the double-arrow button pointing to the right next to the "Select Metrics" text to access the filtering options.*)<br><br>
 - Back to the **Model** tab, you can also view the hyperparameters used to improve the performance of the model/s under **Model Summary** > **AUC Weighted** > **View hyperparameters**.<br><br>
 - You can also view an explanation of the model/s & see which data features (raw or engineered) influenced a particular model's predictions in the **Explanations (preview)** tab.<br><br>
 - Test predictions can also be performed in the **Test results (preview)** tab. In this tab, click **Test model (preview)** and configure the following settings: set **Select compute type** to "Compute cluster," set **Select Azure ML compute cluster** to "automl-compute," and choose the dataset you want to use under **Select a dataset**, then click ``Test``. (***Note:** Ensure you have a test dataset available for making predictions. It is recommended to use a different dataset than the one used to train the model.*)<br><br>
-- You can monitor the progress of the testing in the table within the **Test results (preview)** tab. If the table is empty, simply click ``Refresh`` to update the view. Once the testing is complete, you will see the testing job's AUC score result in the "AUC Weighted" column, and the status will indicate "Completed".
+- You can monitor the progress of the testing in the table within the **Test results (preview)** tab. If the table is empty, simply click ``🗘 Refresh`` to update the view. Once the testing is complete, you will see the testing job's AUC score result in the "AUC Weighted" column, and the status will indicate "Completed".
  
 <br>
 
 ### 5. Deploy trained model/s
+- Using the Automated ML/AutoML interface, you can also deploy the models you trained by clicking ``▷ Deploy``. (***Note:** Ensure you are still in **Assets** > **Jobs** > "Deposit-Subscription-Prediction" > **Models and Child Jobs** > "MaxAbsScaler, LightGBM" to see the ``▷ Deploy`` button.*)<br><br>
 - 
 
 
