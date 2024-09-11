@@ -20,6 +20,14 @@ For demonstration purposes, this tutorial will train a simple classification mod
 
 ### 🎓 III. Tutorial<br><br>
 
+Contents:<br><br>
+[1. Create a workspace]()
+[2. Upload a dataset as a data asset]()
+[3. Create an automated machine learning job]()
+[4. Explore trained model/s]()
+[5. Deploy & test trained model/s]()<br><br>
+
+
 ### 1. Create a workspace<br>
 
 **Option 1: From the *Azure Machine Learning Studio***<br>
@@ -126,7 +134,7 @@ For demonstration purposes, this tutorial will train a simple classification mod
  
 <br>
 
-### 5. Deploy trained model/s
+### 5. Deploy & test trained model/s
 - Using the Automated ML/AutoML interface, you can also deploy the models you trained by clicking ``▷ Deploy``. (***Note:** Ensure you are still in **Assets** > **Jobs** > "Deposit-Subscription-Prediction" > **Models and Child Jobs** > "MaxAbsScaler, LightGBM" to see the ``▷ Deploy`` dropdown button.*)<br><br>
 -  In the ``▷ Deploy`` dropdown button, select "Real-time endpoint". (***Note:** For this tutorial, we will select the "Real-time endpoint" option to enable individual real-time predictions.*)<br><br>
 - If you don't have an existing endpoint, select the "New" option & leave the configured settings as they are, then click ``Deploy``. If you have an existing endpoint, select the "Existing" option & choose the desired endpoint from the **Endpoint name** dropdown.<br><br>
