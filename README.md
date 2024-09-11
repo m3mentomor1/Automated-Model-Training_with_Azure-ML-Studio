@@ -109,8 +109,7 @@ For demonstration purposes, this tutorial will train a simple classification mod
 - Click **Create**.<br><br>
 - Once you have successfully created a new compute cluster, select the newly created cluster in the **Select Azure ML compute cluster** dropdown & click **Next**.<br><br>
 - Click **Submit training job**.<br><br>
-
-
+- To monitor your model's training progress, navigate to the **Jobs** tab under **Assets** in the left navigation pane, then click on "Deposit-Subscription-Prediction". (***Note:** With our current training job setup and dataset, the training process could take anywhere from 15 minutes to 1 hour under typical conditions. However, these are general estimates, and the actual time may vary.*)<br><br>
 
 
 
