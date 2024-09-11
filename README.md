@@ -20,7 +20,7 @@ For demonstration purposes, this tutorial will train a simple classification mod
 
 ### 🎓 III. Tutorial<br><br>
 
-#### Contents:<br><br>
+#### Contents:
 [1. Create a workspace]()<br>
 [2. Upload a dataset as a data asset]()<br>
 [3. Create an automated machine learning job]()<br>
