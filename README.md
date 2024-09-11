@@ -101,6 +101,12 @@ For demonstration purposes, this tutorial will train a simple classification mod
 - Click **Next**.<br><br>
 - In the **Select compute type** dropdown, select "Compute cluster".<br><br>
 - In the **Select Azure ML compute cluster** section, create a new or select an existing compute cluster. If you don't create a new new compute cluster by clicking ``+ New``
+- In the **Location** dropdown, select "East US 2". (***Note:** Select a region based on accessibility & availability. For this project, it will be deployed in "East US 2" due to its high availability.*)<br><br>
+- In the **Virtual machine tier** section, select "Dedicated", then choose "CPU" as your **Virtual machine type**. (***Note:** You can opt for a "GPU" for faster training, but this may result in higher costs and quicker consumption of your Azure credits.*)<br><br>
+- In the **Virtual machine size** section, select "Select from all options", then choose "Standard_D12_v2". (***Note:** You may choose other virtual machine sizes based on your requirements, but for this tutorial, we will use "Standard_D12_v2" as it offers a balanced combination of CPU, memory, and storage for most workloads.*)<br><br>
+- Click **Next**.<br><br>
+- In the **Compute name** section, enter a name for your compute. (***Note:** You can choose any name, but for this project, you can simply name it "automl-compute".*)<br><br>
+- 
 
 
 
