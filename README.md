@@ -121,7 +121,7 @@ For demonstration purposes, this tutorial will train a simple classification mod
 - In the **Metrics** tab, you can filter and view only the metrics you want by using the **Select Metrics** panel on the left side. (***Note:** Click the double-arrow button pointing to the right next to the "Select Metrics" text to access the filtering options.*)<br><br>
 - Back to the **Model** tab, you can also view the hyperparameters used to improve the performance of the model/s under **Model Summary** > **AUC Weighted** > **View hyperparameters**.<br><br>
 - You can also view an explanation of the model/s & see which data features (raw or engineered) influenced a particular model's predictions in the **Explanations (preview)** tab.<br><br>
-- 
+- Test predictions can also be performed in the **Test results (preview)** tab. In this tab, click **Test model (preview)** and configure the following settings: set **Select compute type** to "Compute cluster," set **Select Azure ML compute cluster** to "automl-compute," and choose the dataset you want to use under **Select a dataset**, then click **Test**. (***Note:** Ensure you have a test dataset available for making predictions. It is recommended to use a different dataset than the one used to train the model.*)<<br><br>
 
 
 
