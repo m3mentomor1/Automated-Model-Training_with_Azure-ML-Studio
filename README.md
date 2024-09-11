@@ -142,6 +142,11 @@ For demonstration purposes, this tutorial will train a simple classification mod
 - After the deployment of the endpoint, you can also check check model's deployment status by navigating to **Assets** > **Endpoints** & click the name of the endpoint you just created. If it is successfully deployed, the **Provisioning state** under the **Deployment <deployment_name>** section will indicate "Succeeded".<br><br>
 - To test the deployed model & predict whether a client will subscribe to a fixed-term deposit with a financial institution or not, navigate to the **Test** tab & input data in JSON format in the **Sample inference** > **Input** editor. (***Note:** For your convenience, you can use this example [input data](https://github.com/m3mentomor1/Automated-Model-Training_with_Azure-ML-Studio/blob/main/example-input-data.txt). This also includes an explanation of each column to give you an idea on why each input data is used.*)<br><br>
 - To view the prediction results, scroll-down to the bottom & see the results in the **jsonOutput** section. 
+<br><br>
+##
+
+### 📋 IV. References/Source Materials
+[Microsoft Learn | Tutorial: Train a classification model with no-code AutoML in the Azure Machine Learning studio](https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-first-experiment-automated-ml?view=azureml-api-2)
 
 
 
