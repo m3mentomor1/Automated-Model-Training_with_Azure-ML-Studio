@@ -96,7 +96,7 @@ For demonstration purposes, this tutorial will train a simple classification mod
 - Select "Classification" from the **Select task type** drop-down. Then, in the **Select data** section, select the "bankmarketing" dataset we uploaded. After that, click **Next**.<br><br>
 - In the **Target column** section, select "y (string)" as this column indicates whether the client subscribed to a term deposit or not, which corresponds to what we want our model to predict.<br><br>
 - Select **View additional configuration settings** and ensure the following configurations to better control the training job: set **Primary metric** to "AUCWeighted", enable **Explain best model** and **Use all supported models**, ensure no models are checked in the **Blocked models** section, and leave the **Positive class label** section blank. After configuring these settings, click **Save**.<br><br>
-- In the **Limits** dropdown, and ensure the following configurations: set **Max nodes** to "6", set **Metric score threshold** to "0.8" (equivalent to 80%) since the model we're training is only a baseline model.<br><br>
+- In the **Limits** dropdown, ensure the following configuration: set **Max nodes** to "6", set **Metric score threshold** to "0.8" (equivalent to 80%) since the model we're training is only a baseline model.<br><br>
 - In the **Validation type** dropdown, select "k-fold cross-validation", then enter "2" as your **Number of cross validations**. (***Note:** This section is optional and may be left as is, but for this project, a k-fold cross-validation will be implemented.*)<br><br>
 - Click **Next**.<br><br>
 - In the **Select compute type** dropdown, select "Compute cluster".<br><br>
