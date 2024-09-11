@@ -92,21 +92,21 @@ For demonstration purposes, this tutorial will train a simple classification mod
 - In the **Experiment name** section, select "Create new". (***Note:**  If this is your first time creating an experiment/job or you don't have any existing experiments, this section might be grayed out & defaulted to "Create new". If this is the case, leave it as is.*)<br><br> 
 - In the **New experiment name** section, enter a name for your experiment. (***Note:** You can choose any name, but for this project, you can name it "Binary-Classification" since the model we will train is a binary classification model.*)<br><br>
 - In the **Description** section, you can also put a description about your experiment. (**Optional**)<br><br>
-- Click **Next**.<br><br>
+- Click ``Next``.<br><br>
 - Select "Classification" from the **Select task type** drop-down. Then, in the **Select data** section, select the "bankmarketing" dataset we uploaded. After that, click **Next**.<br><br>
 - In the **Target column** section, select "y (string)" as this column indicates whether the client subscribed to a term deposit or not, which corresponds to what we want our model to predict.<br><br>
 - Select **View additional configuration settings** & ensure the following configurations to better control the training job: set **Primary metric** to "AUCWeighted", enable **Explain best model** & **Use all supported models**, ensure no models are checked in the **Blocked models** section, & leave the **Positive class label** section blank. After configuring these settings, click **Save**.<br><br>
 - In the **Limits** dropdown, ensure the following configuration: set **Max nodes** to "6", set **Metric score threshold** to "0.8" (equivalent to 80%) since the model we're training is only a baseline model.<br><br>
 - In the **Validation type** dropdown, select "k-fold cross-validation", then enter "2" as your **Number of cross validations**. (***Note:** This section is optional & may be left as is, but for this project, a k-fold cross-validation will be implemented.*)<br><br>
-- Click **Next**.<br><br>
+- Click ``Next``.<br><br>
 - In the **Select compute type** dropdown, select "Compute cluster".<br><br>
 - In the **Select Azure ML compute cluster** section, either create a new compute cluster or select an existing one. If no compute cluster is available, you can create a new one by clicking ``+ New``
 - If you decide to create one, select "East US 2" in  the **Location** dropdown. (***Note:** Select a region based on accessibility & availability. For this project, it will be deployed in "East US 2" due to its high availability.*)<br><br>
 - In the **Virtual machine tier** section, select "Dedicated", then choose "CPU" as your **Virtual machine type**. (***Note:** You can opt for a "GPU" for faster training, but this may result in higher costs & quicker consumption of your Azure credits.*)<br><br>
 - In the **Virtual machine size** section, select "Select from all options", then find & choose "Standard_DS12_v2" from the options. (***Note:** You may choose other virtual machine sizes based on your requirements, but for this tutorial, we will use "Standard_DS12_v2" as it offers a balanced combination of CPU, memory, & storage for most workloads.*)<br><br>
-- Click **Next**.<br><br>
+- Click ``Next``.<br><br>
 - In the **Compute name** section, enter a name for your compute & leave the other configurations as they are. (***Note:** You can choose any name, but for this project, you can simply name it "automl-compute".*)<br><br>
-- Click **Create**.<br><br>
+- Click ``Create``.<br><br>
 - Once you have successfully created a new compute cluster, select the newly created cluster in the **Select Azure ML compute cluster** dropdown & click **Next**.<br><br>
 - Click **Submit training job**.<br><br>
 - To monitor the training progress, navigate to the **Jobs** tab under **Assets** in the left navigation pane, then click on "Deposit-Subscription-Prediction." You can check the training status under the **Status** section. If it says "Completed," your model/s have finished training. (***Note:** With our current training job setup and dataset, the training process could take anywhere from 15 minutes to 1 hour under typical conditions. However, these are general estimates, and the actual time may vary.*)
@@ -121,9 +121,14 @@ For demonstration purposes, this tutorial will train a simple classification mod
 - In the **Metrics** tab, you can filter and view only the metrics you want by using the **Select Metrics** panel on the left side. (***Note:** Click the double-arrow button pointing to the right next to the "Select Metrics" text to access the filtering options.*)<br><br>
 - Back to the **Model** tab, you can also view the hyperparameters used to improve the performance of the model/s under **Model Summary** > **AUC Weighted** > **View hyperparameters**.<br><br>
 - You can also view an explanation of the model/s & see which data features (raw or engineered) influenced a particular model's predictions in the **Explanations (preview)** tab.<br><br>
-- Test predictions can also be performed in the **Test results (preview)** tab. In this tab, click **Test model (preview)** and configure the following settings: set **Select compute type** to "Compute cluster," set **Select Azure ML compute cluster** to "automl-compute," and choose the dataset you want to use under **Select a dataset**, then click **Test**. (***Note:** Ensure you have a test dataset available for making predictions. It is recommended to use a different dataset than the one used to train the model.*)<br><br>
-- You can monitor the progress of the testing in the table within the **Test results (preview)** tab. If the table is empty, simply click **Refresh** to update the view. Once the testing is complete, you will see the testing job's AUC score result in the "AUC Weighted" column, and the status will indicate "Completed".<br><br>
+- Test predictions can also be performed in the **Test results (preview)** tab. In this tab, click **Test model (preview)** and configure the following settings: set **Select compute type** to "Compute cluster," set **Select Azure ML compute cluster** to "automl-compute," and choose the dataset you want to use under **Select a dataset**, then click ``Test``. (***Note:** Ensure you have a test dataset available for making predictions. It is recommended to use a different dataset than the one used to train the model.*)<br><br>
+- You can monitor the progress of the testing in the table within the **Test results (preview)** tab. If the table is empty, simply click ``Refresh`` to update the view. Once the testing is complete, you will see the testing job's AUC score result in the "AUC Weighted" column, and the status will indicate "Completed".
+ 
+<br>
+
+### 5. Deploy trained model/s
 - 
+
 
 
 
