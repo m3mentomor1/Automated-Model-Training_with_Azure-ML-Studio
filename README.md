@@ -141,7 +141,25 @@ For demonstration purposes, this tutorial will train a simple classification mod
 - To check the endpoint's deployment status, navigate to **Assets** > **Endpoints** & click the name of the endpoint you just created. If it is successfully deployed the **Provisioning state** under **Endpoint attributes** section will indicate "Succeeded".<br><br>
 - After the deployment of the endpoint, you can also check check model's deployment status by navigating to **Assets** > **Endpoints** & click the name of the endpoint you just created. If it is successfully deployed, the **Provisioning state** under the **Deployment <deployment_name>** section will indicate "Succeeded".<br><br>
 - To test the deployed model & predict whether a client will subscribe to a fixed-term deposit with a financial institution or not, navigate to the **Test** tab & input data in JSON format in the **Sample inference** > **Input** editor. (***Note:** For your convenience, you can use this example [input data](https://github.com/m3mentomor1/Automated-Model-Training_with_Azure-ML-Studio/blob/main/example-input-data.txt). This also includes an explanation of each column to give you an idea on why each input data is used.*)<br><br>
-- To view the prediction results, scroll-down to the bottom & see the results in the **jsonOutput** section. 
+- To view the prediction results, scroll-down to the bottom & see the results in the **jsonOutput** section.
+ 
+<br>
+
+### 6. Clean all used resources<br>
+
+**Option 1: Delete only the deployment instance & keep the resource group and workspace**<br>
+- Go to https://ml.azure.com.<br><br>
+- In the left navigation pane, go to **Assets** > **Endpoints**, select the deployment instance you created for this tutorial, & then click ``Delete``.<br><br>
+- Click ``Delete``.
+
+<br>
+
+**Option 2: Delete all resources used in this tutorial**<br>
+- Go to https://portal.azure.com.<br><br>
+- Under **Azure services**, select **Resource groups**.<br><br>
+- In **Resource groups**, click resource group you created for this tutorial.<br><br>
+- Select ``Delete resource group``.<br><br>
+- Enter the name of the resource group in the **Enter resource group name to confirm deletion** field & click ``Delete``.
 <br><br>
 ##
 
