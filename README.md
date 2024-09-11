@@ -21,7 +21,7 @@ For demonstration purposes, this tutorial will train a simple classification mod
 ### 🎓 III. Tutorial<br>
 
 #### Contents:
-[1. Create a workspace]()<br>
+[1. Create a workspace](https://github.com/m3mentomor1/Automated-Model-Training_with_Azure-ML-Studio/blob/main/README.md#1-create-a-workspace)<br>
 [2. Upload a dataset as a data asset]()<br>
 [3. Create an automated machine learning job]()<br>
 [4. Explore trained model/s]()<br>
