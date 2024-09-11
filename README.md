@@ -18,7 +18,7 @@ For demonstration purposes, this tutorial will train a simple classification mod
 <br><br>
 ##
 
-### 🎓 III. Tutorial<br><br>
+### 🎓 III. Tutorial<br>
 
 #### Contents:
 [1. Create a workspace]()<br>
