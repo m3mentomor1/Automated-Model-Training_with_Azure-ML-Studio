@@ -133,7 +133,7 @@ For demonstration purposes, this tutorial will train a simple classification mod
 - To check the endpoint's deployment status, navigate to **Assets** > **Endpoints** & click the name of the endpoint you just created. If it is successfully deployed the **Provisioning state** under **Endpoint attributes** section will indicate "Succeeded".<br><br>
 - After the deployment of the endpoint, you can also check check model's deployment status by navigating to **Assets** > **Endpoints** & click the name of the endpoint you just created. If it is successfully deployed, the **Provisioning state** under the **Deployment <deployment_name>** section will indicate "Succeeded".<br><br>
 - To test the deployed model & predict whether a client will subscribe to a fixed-term deposit with a financial institution or not, navigate to the **Test** tab & input data in JSON format in the **Sample inference** > **Input** editor. (***Note:** For your convenience, you can use this example input data. This also includes an explanation of each column to give you an idea on why is that input data used.*)<br><br>
-
+- To view the prediction results, scroll-down to the bottom & see the results in the **jsonOutput** section. 
 
 
 
