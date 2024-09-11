@@ -20,11 +20,11 @@ For demonstration purposes, this tutorial will train a simple classification mod
 
 ### 🎓 III. Tutorial<br><br>
 
-Contents:<br><br>
-[1. Create a workspace]()
-[2. Upload a dataset as a data asset]()
-[3. Create an automated machine learning job]()
-[4. Explore trained model/s]()
+#### Contents:<br><br>
+[1. Create a workspace]()<br>
+[2. Upload a dataset as a data asset]()<br>
+[3. Create an automated machine learning job]()<br>
+[4. Explore trained model/s]()<br>
 [5. Deploy & test trained model/s]()<br><br>
 
 
