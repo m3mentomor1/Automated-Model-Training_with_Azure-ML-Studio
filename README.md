@@ -95,20 +95,20 @@ For demonstration purposes, this tutorial will train a simple classification mod
 - Click **Next**.<br><br>
 - Select "Classification" from the **Select task type** drop-down. Then, in the **Select data** section, select the "bankmarketing" dataset we uploaded. After that, click **Next**.<br><br>
 - In the **Target column** section, select "y (string)" as this column indicates whether the client subscribed to a term deposit or not, which corresponds to what we want our model to predict.<br><br>
-- Select **View additional configuration settings** and ensure the following configurations to better control the training job: set **Primary metric** to "AUCWeighted", enable **Explain best model** and **Use all supported models**, ensure no models are checked in the **Blocked models** section, and leave the **Positive class label** section blank. After configuring these settings, click **Save**.<br><br>
+- Select **View additional configuration settings** & ensure the following configurations to better control the training job: set **Primary metric** to "AUCWeighted", enable **Explain best model** & **Use all supported models**, ensure no models are checked in the **Blocked models** section, & leave the **Positive class label** section blank. After configuring these settings, click **Save**.<br><br>
 - In the **Limits** dropdown, ensure the following configuration: set **Max nodes** to "6", set **Metric score threshold** to "0.8" (equivalent to 80%) since the model we're training is only a baseline model.<br><br>
-- In the **Validation type** dropdown, select "k-fold cross-validation", then enter "2" as your **Number of cross validations**. (***Note:** This section is optional and may be left as is, but for this project, a k-fold cross-validation will be implemented.*)<br><br>
+- In the **Validation type** dropdown, select "k-fold cross-validation", then enter "2" as your **Number of cross validations**. (***Note:** This section is optional & may be left as is, but for this project, a k-fold cross-validation will be implemented.*)<br><br>
 - Click **Next**.<br><br>
 - In the **Select compute type** dropdown, select "Compute cluster".<br><br>
-- In the **Select Azure ML compute cluster** section, create a new or select an existing compute cluster. If you don't create a new new compute cluster by clicking ``+ New``
-- In the **Location** dropdown, select "East US 2". (***Note:** Select a region based on accessibility & availability. For this project, it will be deployed in "East US 2" due to its high availability.*)<br><br>
-- In the **Virtual machine tier** section, select "Dedicated", then choose "CPU" as your **Virtual machine type**. (***Note:** You can opt for a "GPU" for faster training, but this may result in higher costs and quicker consumption of your Azure credits.*)<br><br>
-- In the **Virtual machine size** section, select "Select from all options", then choose "Standard_D12_v2". (***Note:** You may choose other virtual machine sizes based on your requirements, but for this tutorial, we will use "Standard_D12_v2" as it offers a balanced combination of CPU, memory, and storage for most workloads.*)<br><br>
+- In the **Select Azure ML compute cluster** section, either create a new compute cluster or select an existing one. If no compute cluster is available, you can create a new one by clicking ``+ New``
+- If you decide to create one, select "East US 2" in  the **Location** dropdown. (***Note:** Select a region based on accessibility & availability. For this project, it will be deployed in "East US 2" due to its high availability.*)<br><br>
+- In the **Virtual machine tier** section, select "Dedicated", then choose "CPU" as your **Virtual machine type**. (***Note:** You can opt for a "GPU" for faster training, but this may result in higher costs & quicker consumption of your Azure credits.*)<br><br>
+- In the **Virtual machine size** section, select "Select from all options", then find & choose "Standard_DS12_v2" from the options. (***Note:** You may choose other virtual machine sizes based on your requirements, but for this tutorial, we will use "Standard_DS12_v2" as it offers a balanced combination of CPU, memory, & storage for most workloads.*)<br><br>
 - Click **Next**.<br><br>
-- In the **Compute name** section, enter a name for your compute. (***Note:** You can choose any name, but for this project, you can simply name it "automl-compute".*)<br><br>
-- 
-
-
+- In the **Compute name** section, enter a name for your compute & leave the other configurations as they are. (***Note:** You can choose any name, but for this project, you can simply name it "automl-compute".*)<br><br>
+- Click **Create**.<br><br>
+- Once you have successfully created a new compute cluster, select the newly created cluster in the **Select Azure ML compute cluster** dropdown & click **Next**.<br><br>
+- Click **Submit training job**.<br><br>
 
 
 
